@@ -1,0 +1,51 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnectionString": ""
+  },
+
+  "Logging": {
+    "Console": {
+      "LogLevel": {
+        "Default": "Information",
+        "Microsoft": "Warning"
+      }
+    },
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning"
+    }
+  },
+
+  "FileLogging": {
+    "PathFormat": "Logs/logs.txt",
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Information"
+    }
+  },
+
+  "Log4NetCore": {
+    "Name": "Test",
+    "LoggerRepository": "Fantastic",
+    "OverrideCriticalLevelWith": "Fatal",
+    "Watch": false,
+    "UseWebOrAppConfig": false,
+    "PropertyOverrides": [
+      {
+        "XPath": "/log4net/appender[@name='RollingFile']/file",
+        "Attributes": {
+          "Value": "Logs/log.txt"
+        }
+      },
+      {
+        "XPath": "/log4net/appender[@name='RollingFile']/maximumFileSize",
+        "Attributes": {
+          "Value": "10000KB"
+        }
+      },
+      {
+        "XPath": "/log4net/appender[@name='RollingFile']/file"
+      }
+    ]
+  }
+}
