@@ -10,37 +10,38 @@ public class Program
         var directorypath = Console.ReadLine();
         while (string.IsNullOrWhiteSpace(directorypath))
         {
-            Console.WriteLine("Please enter project directory: ");
+            Console.Write("Please enter project directory: ");
             directorypath = Console.ReadLine();
         }
         
-        Console.WriteLine("Please enter project old name: ");
+        Console.Write("Please enter project old name: ");
         var projectOldName = Console.ReadLine();
         while (string.IsNullOrWhiteSpace(projectOldName))
         {
-            Console.WriteLine("Please enter project old name: ");
+            Console.Write("Please enter project old name: ");
             projectOldName = Console.ReadLine();
         }
 
-        Console.WriteLine("Please enter project new name: ");
+        Console.Write("Please enter project new name: ");
         var projectNewName = Console.ReadLine();
         while (string.IsNullOrWhiteSpace(projectNewName))
         {
-            Console.WriteLine("Please enter project new name: ");
+            Console.Write("Please enter project new name: ");
             projectNewName = Console.ReadLine();
         }
 
+        Console.WriteLine("Start rename directories...");
         StartRenameDirectories(directorypath, projectOldName, projectNewName);
+        Console.WriteLine("End rename directories.");
 
         Console.WriteLine("Project renamer end!");
     }
 
     private static void StartRenameDirectories(string directorypath, string projectOldName, string projectNewName)
     {
-        Console.WriteLine("Start rename directories...");
-
-
-
-        Console.WriteLine("End rename directories");
+        var directories = Directory.GetDirectories(directorypath);
+        foreach (var directory in directories)
+        {
+        }
     }
 }
