@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using ConsoleAppTemplate.Constants;
+using ConsoleAppTemplate.Common.Constants;
 
 namespace ConsoleAppTemplate.ConsoleApp;
 

@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
-using ConsoleAppTemplate.Constants;
+using ConsoleAppTemplate.Common.Constants;
 
 namespace ConsoleAppTemplate.ConsoleApp;
 
