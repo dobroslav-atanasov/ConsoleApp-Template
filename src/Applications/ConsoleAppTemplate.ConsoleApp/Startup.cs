@@ -1,5 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using ConsoleAppTemplate.Constants;
 
 namespace ConsoleAppTemplate.ConsoleApp;
 
@@ -16,6 +19,14 @@ internal class Startup
 
     internal ServiceCollection ConfigurationServices()
     {
-        throw new NotImplementedException();
+        // LOGGING
+        this.services.AddLogging(config =>
+        {
+            config.AddConfiguration(this.configuration.GetSection(GlobalConstants.LOGGING));
+            config.AddConsole();
+            config.AddLog4Net(this.configuration.GetSection(GlobalConstants.LOG4NET_CORE).Get<Log4NetProviderOptions>());
+        });
+
+        return this.services;
     }
 }
