@@ -1,5 +1,6 @@
 ﻿namespace ConsoleAppTemplate.Services.Interfaces;
 
-public class IHttpService
+public interface IHttpService
 {
+
 }
