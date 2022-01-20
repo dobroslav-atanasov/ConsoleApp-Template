@@ -1,9 +1,9 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿namespace ConsoleAppTemplate.ConsoleApp;
+
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using ConsoleAppTemplate.Common.Constants;
-
-namespace ConsoleAppTemplate.ConsoleApp;
+using Common.Constants;
 
 public class Program
 {
