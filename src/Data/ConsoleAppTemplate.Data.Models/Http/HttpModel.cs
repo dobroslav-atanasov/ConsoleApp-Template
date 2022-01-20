@@ -15,11 +15,11 @@ public class HttpModel
 
     public Encoding Encoding { get; set; }
 
-    public string Content { get; set; }
+    public string? Content { get; set; }
 
-    public string MimeType { get; set; }
+    public string? MimeType { get; set; }
 
-    public HtmlDocument HtmlDocument { get; set; }
+    public HtmlDocument? HtmlDocument { get; set; }
 
     public HttpStatusCode StatusCode { get; set; }
 }
