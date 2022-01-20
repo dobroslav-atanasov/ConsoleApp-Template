@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Common\ConsoleAppTemplate.Common.Constants\ConsoleAppTemplate.Common.Constants.csproj" />
+    <ProjectReference Include="..\..\Services\ConsoleAppTemplate.Services\ConsoleAppTemplate.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>

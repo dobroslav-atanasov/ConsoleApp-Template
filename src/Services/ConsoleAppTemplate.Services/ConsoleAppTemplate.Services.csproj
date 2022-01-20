@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\ConsoleAppTemplate.Data.Models\ConsoleAppTemplate.Data.Models.csproj" />
+  </ItemGroup>
+
 </Project>
