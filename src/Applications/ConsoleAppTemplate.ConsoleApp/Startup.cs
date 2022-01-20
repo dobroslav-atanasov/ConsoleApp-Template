@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
 using Common.Constants;
+using Services;
+using Services.Interfaces;
 
 internal class Startup
 {
@@ -26,6 +28,9 @@ internal class Startup
             config.AddConsole();
             config.AddLog4Net(this.configuration.GetSection(GlobalConstants.LOG4NET_CORE).Get<Log4NetProviderOptions>());
         });
+
+        // SERVICES
+        this.services.AddScoped<IHttpService, HttpService>();
 
         return this.services;
     }
