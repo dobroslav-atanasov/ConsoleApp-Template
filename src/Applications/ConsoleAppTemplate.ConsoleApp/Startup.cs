@@ -29,6 +29,8 @@ internal class Startup
             config.AddLog4Net(this.configuration.GetSection(GlobalConstants.LOG4NET_CORE).Get<Log4NetProviderOptions>());
         });
 
+        this.services.AddScoped<Engine>();
+
         // SERVICES
         this.services.AddScoped<IHttpService, HttpService>();
 
