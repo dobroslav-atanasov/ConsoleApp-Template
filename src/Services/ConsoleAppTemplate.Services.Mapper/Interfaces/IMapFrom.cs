@@ -1,5 +1,5 @@
 ﻿namespace ConsoleAppTemplate.Services.Mapper.Interfaces;
 
-public interface IMapFrom
+public interface IMapFrom<TEntity>
 {
 }
