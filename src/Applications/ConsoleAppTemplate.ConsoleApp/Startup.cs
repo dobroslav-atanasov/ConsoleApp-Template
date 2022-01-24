@@ -1,5 +1,7 @@
 ﻿namespace ConsoleAppTemplate.ConsoleApp;
 
+using System.Reflection;
+
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -7,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Common.Constants;
 using Services;
 using Services.Interfaces;
+using Services.Mapper;
 
 internal class Startup
 {
@@ -30,6 +33,12 @@ internal class Startup
         });
 
         this.services.AddScoped<Engine>();
+
+        // AUTOMAPPER
+        AutoMapperConfiguration.ConfigureMappings(new[]
+        {
+            Assembly.Load(GlobalConstants.ASSEMBLY_MODELS)
+        });
 
         // SERVICES
         this.services.AddScoped<IHttpService, HttpService>();
