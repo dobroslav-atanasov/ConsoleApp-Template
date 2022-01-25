@@ -10,4 +10,8 @@
     <PackageReference Include="HtmlAgilityPack" Version="1.11.40" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Services\ConsoleAppTemplate.Services.Mapper\ConsoleAppTemplate.Services.Mapper.csproj" />
+  </ItemGroup>
+
 </Project>
