@@ -1,6 +1,6 @@
-﻿using ConsoleAppTemplate.Services.Interfaces;
+﻿namespace ConsoleAppTemplate.ConsoleApp;
 
-namespace ConsoleAppTemplate.ConsoleApp;
+using Services.Interfaces;
 
 internal class Engine
 {
@@ -13,6 +13,5 @@ internal class Engine
 
     internal async Task RunAsync()
     {
-
     }
 }
