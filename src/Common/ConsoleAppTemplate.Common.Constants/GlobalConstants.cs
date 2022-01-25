@@ -8,4 +8,7 @@ public static class GlobalConstants
     public const string LOG4NET_CORE = "Log4NetCore";
 
     public const string DEFAULT_CONNECTION_STRING = "DefaultConnectionString";
+
+    public const string REFLECTION_PROFILE = "ReflectionProfile";
+    public const string ASSEMBLY_MODELS = "ConsoleAppTemplate.Data.Models";
 }
