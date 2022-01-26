@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D8
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppTemplate.Services", "Services\ConsoleAppTemplate.Services\ConsoleAppTemplate.Services.csproj", "{665594F5-E6D2-4B8F-8F67-54CCE403C3F8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTemplate.Services.Mapper", "Services\ConsoleAppTemplate.Services.Mapper\ConsoleAppTemplate.Services.Mapper.csproj", "{78C12E8A-BE7A-497D-A4E6-3C63053D3DBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleAppTemplate.Services.Mapper", "Services\ConsoleAppTemplate.Services.Mapper\ConsoleAppTemplate.Services.Mapper.csproj", "{78C12E8A-BE7A-497D-A4E6-3C63053D3DBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
